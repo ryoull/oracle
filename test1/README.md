@@ -38,12 +38,12 @@ HAVING d.department_name in ('IT','Sales');
 - <b>1.3查询截图：</b>
 - 1.3.1查询一截图
 ![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/1.png)  
-![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/2.png)
-![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/3.png)
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/2.png)
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/3.png)
 - 1.3.2查询二截图
-![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/4.png)
-![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/5.png)
-![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/6.png)
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/4.png)
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/5.png)
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/6.png)
 
 
 - <b>1.4 查询分析：</b><br>
@@ -71,6 +71,6 @@ HAVING COUNT(*) > 2;
 详细分析：该查询由基本的SELECT、FROM和WHERE三个子句构成基本查询结构，再使用GROUP  BY对查询结果按列进行分组，使相等的分为一组。HAVING子句对分组结果进行选择，仅输出满足条件的组，并和GROUP  BY结合使用。该查询运用了等值连接E.DEPARTMENT_ID = D.DEPARTMENT_ID AND D.LOCATION_ID = L.LOCATION_ID AND E.SALARY > 1000  实现了多个关系的查询，并表示出了工资大于一千，以及表之间对应应该满足的条件，最后由HAVING子句实现人数超过2人的条件完成查询。
 - <b>2.3sqldevoper执行结果</b>
 
-![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/7.png)
-![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/8.png)
-![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/9.png)
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/7.png)
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/8.png)
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/9.png)
