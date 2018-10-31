@@ -21,7 +21,9 @@ SQL> ALTER USER new_user QUOTA 50M ON users;
 User altered.
 SQL> GRANT con_res_view TO new_user;Grant succeeded.
 SQL> exit
-```
+```  
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test2/1.png)  
+
 2.第2步：新用户user-dl连接到 pdborcl，创建表mytable和视图myview，插入数据，最后将myview的SELECT对象权限授予hr用户。  
 ```
 $ sqlplus /123@pdborcl
@@ -39,7 +41,9 @@ zhang
 wang
 SQL> GRANT SELECT ON myview TO hr;Grant succeeded.
 SQL>exit
-```
+```  
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test2/2.png)  
+
 3.第3步：用户hr连接到pdborcl，查询user_dl授予它的视图myview  
 ```
 $ sqlplus hr/123@pdborcl
@@ -48,7 +52,9 @@ NAME--------------------------------------------------
 zhang
 wang
 SQL> exit
-```
+```  
+![IMAGE](https://github.com/ryoull/Oracle/blob/master/test2/3.png)  
+
 4.查看数据库的使用情况  
 ```
 $ sqlplus system/123@pdborcl
