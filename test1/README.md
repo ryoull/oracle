@@ -37,7 +37,7 @@ HAVING d.department_name in ('IT','Sales');
 ```
 - <b>1.3查询截图：</b>
 - 1.3.1查询一截图
-![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/1.png)
+![IMAGE](https://github.com/ryoull/oracle/blob/master/test1/1.png)  
 ![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/2.png)
 ![IMAGE](https://raw.githubusercontent.com/ryoull/Oracle/master/3.png)
 - 1.3.2查询二截图
