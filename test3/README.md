@@ -161,4 +161,4 @@ select * from orders, order_details where orders.order_id = order_details.order_
 
 ## 对比分析
 两张表均有上万条数据，从表ORDER_DETAILS跟主表ORDERS建立了主外键，orders表按照时间分成三个表空间，通过分区和不分区实验结果对比，分区表查 询的资源占比明显高出很多，查询速度快了不少。
-通过分区， 查询时就不用扫描整张表，而是一块区域一块区域的去查找，这样就会快不少。
+通过分区， 查询时就不用扫描整张表，而是一块区域一块区域的去查找，会节约很多时间。
